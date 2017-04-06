@@ -43,6 +43,6 @@ public class ClaseControlador implements ActionListener { //es una interfaz y po
 		objVista.btnReservar.addActionListener(escuchador);
 		objVista.btnInformacion.addActionListener(escuchador);
 		objVista.btnCompañias.addActionListener(escuchador);
- //hggghghghghgh
+		//hggghghghghgh
 	}
 }
