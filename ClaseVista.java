@@ -13,15 +13,15 @@ public class ClaseVista extends JFrame {
 
 
 	public ClaseVista(){
-	     
-	     	// Pide al usuario que escriba su nombre
+
+		// Pide al usuario que escriba su nombre
 		String nombre = JOptionPane.showInputDialog( "Cual es su nombre?" );
 
 		// Crea el mensaje
 		String mensaje = String.format( "Bienvenid@ %s, a nuesta agencia de viajes!", nombre );
 
 		String mensaje1 = String.format( "Viajes Tonton!", nombre );
-		
+
 		String mensaje2 = String.format( "Hasta otra! "+nombre);
 
 
@@ -64,7 +64,7 @@ public class ClaseVista extends JFrame {
 		btnCompañias.setBounds(36, 201, 200, 41);
 		contenedor.add(btnCompañias);
 
-		lblEligeUnoDe = new JLabel("<html>Viaja con la compañia Viajes tonton <br> y vive tu experiencia a tope</html>");
+		lblEligeUnoDe = new JLabel("<html>Viaja con la compania Viajes tonton <br> y vive tu experiencia a tope</html>");
 		lblEligeUnoDe.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblEligeUnoDe.setBounds(27, 11, 386, 75);
 		contenedor.add(lblEligeUnoDe);

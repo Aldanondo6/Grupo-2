@@ -1,5 +1,3 @@
-
-
 import javax.swing.JOptionPane;
 
 public class ClaseModelo{
@@ -40,12 +38,11 @@ public class ClaseModelo{
 		Object msj = "   ";
 
 		JOptionPane.showMessageDialog(null, msj, //Mensaje 
-				"Informacion", //Título
+				"Informacion", //Titulo
 				JOptionPane.INFORMATION_MESSAGE);
 	}
-	
-	public static void metodoCompañias(){
-		
-	}
 
+	public static void metodoCompanias(){
+
+	}
 }

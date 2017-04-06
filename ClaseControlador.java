@@ -3,22 +3,16 @@ import java.awt.event.ActionListener;
 
 public class ClaseControlador implements ActionListener { //es una interfaz y por tal se debe de implementar todos los metodos que ella posee.
 
-
 	ClaseModelo objModelo=null;
 	ClaseVista objVista=null;
-
-
 
 	public ClaseControlador(ClaseVista objVista, ClaseModelo objModelo){ //constructor
 
 		this.objVista=objVista;
 		this.objModelo=objModelo;
 
-
 		actionListener(this); //escuchador para el boton
 	}
-
-
 
 	public void actionPerformed (ActionEvent e){ //actionPerformed(ActionEvent e) metodo del ActionListener
 
@@ -37,14 +31,11 @@ public class ClaseControlador implements ActionListener { //es una interfaz y po
 				if (fuente==objVista.btnInformacion) {
 					objModelo.metodoInformacion();
 				}
-					else
-						if (fuente==objVista.btnCompañias) {
-							objModelo.metodoCompañias();
-				}
-
+				else
+					if (fuente==objVista.btnCompañias) {
+						objModelo.metodoCompañias();
+					}
 	}
-
-
 
 	public void actionListener(ActionListener escuchador) {
 
@@ -52,7 +43,6 @@ public class ClaseControlador implements ActionListener { //es una interfaz y po
 		objVista.btnReservar.addActionListener(escuchador);
 		objVista.btnInformacion.addActionListener(escuchador);
 		objVista.btnCompañias.addActionListener(escuchador);
-
 
 	}
 }
