@@ -14,16 +14,16 @@ public class ClaseModelo{
 		if(pregunta1=="España" && pregunta2=="Noruega"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Noruega");
 		}
-		if(pregunta1=="España" && pregunta2=="Italia"){
+		else if(pregunta1=="España" && pregunta2=="Italia"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Italia");
 		}
-		if(pregunta1=="España" && pregunta2=="Francia"){
+		else if(pregunta1=="España" && pregunta2=="Francia"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Francia");
 		}
-		if(pregunta1=="España" && pregunta2=="Marruecos"){
+		else if(pregunta1=="España" && pregunta2=="Marruecos"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Marruecos");
 		}
-		if(pregunta1=="España" && pregunta2=="Egipto"){
+		else if(pregunta1=="España" && pregunta2=="Egipto"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Egipto");
 		}
 
