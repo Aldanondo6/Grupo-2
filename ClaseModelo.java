@@ -26,10 +26,14 @@ public class ClaseModelo{
 		else if(pregunta1=="España" && pregunta2=="Egipto"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Egipto");
 		}
+		else if(pregunta1=="España" && pregunta2=="España"){
+			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Egipto");
+		}
 
 	}
 
 	public static void metodoReservar(){
+		
 	}
 
 	public static void metodoInformacion(){
