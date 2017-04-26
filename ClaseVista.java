@@ -1,9 +1,9 @@
-
 import javax.swing.*;
 import java.awt.Font;
 import java.awt.Container;
+import javax.swing.JFrame;
 
-public class ClaseVista extends JFrame {
+public class ClaseVista extends javax.swing.JFrame {
 
 	JButton btnBuscar=null;
 	JButton btnInformacion=null;
@@ -69,5 +69,12 @@ public class ClaseVista extends JFrame {
 		lblEligeUnoDe.setBounds(27, 11, 386, 75);
 		contenedor.add(lblEligeUnoDe);
 		setVisible(true);
+		
+		setLocationRelativeTo(null);
+		setResizable(false);
+		setTitle("ejemplo");
+		setIconImage(new ImageIcon(getClass().getResource("/Imagenes/letraT.jpg")).getImage());
+		((JPanel)getContentPane()).setOpaque(false); ImageIcon uno=new ImageIcon(this.getClass().getResource("/Imagenes/prueba.png")); JLabel fondo= new JLabel(); fondo.setIcon(uno); getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER); fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
+
 	}
 }
