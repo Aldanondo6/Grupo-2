@@ -1,3 +1,4 @@
+
 import javax.swing.JOptionPane;
 
 public class ClaseModelo{
@@ -5,35 +6,34 @@ public class ClaseModelo{
 
 		Object pregunta1 = JOptionPane.showInputDialog(null,"Selecciona el pais de salida",
 				"preguntas", JOptionPane.PLAIN_MESSAGE, null,
-				new Object[] { "España","Italia", "Noruega", "Francia", "Marruecos", "Egipto" },"España");
+			new Object[] { "España","Italia", "Noruega", "Francia", "Marruecos", "Egipto" },"España");
 
 		Object pregunta2 = JOptionPane.showInputDialog(null,"Selecciona el pais de Destino",
 				"preguntas", JOptionPane.PLAIN_MESSAGE, null,
 				new Object[] { "España","Italia", "Noruega", "Francia", "Marruecos", "Egipto" },"España");
 
+		if(pregunta1=="España" && pregunta2=="España"){
+			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a España: \n1) Origen-Destino: Bilbao - Madrid \n2) Origen-Destino:Barcelona - Madrid  \n3) Orgien-Destino: Sevilla - Pamplona \n4) Origen-Destino: Leon - Murcia \n5) Origen-Destino: Badajoz - Valencia");
+		}
 		if(pregunta1=="España" && pregunta2=="Noruega"){
-			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Noruega");
+			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Noruega: \n1) Origen-Destino: Madirid - Noruega \n2) Origen-Destino: Madrid - Oslo\n3) Origen-Destino: Bilbao - Oslo\n4) Origen-Destino: Bilbao - Bergen ");
 		}
-		else if(pregunta1=="España" && pregunta2=="Italia"){
-			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Italia");
+		if(pregunta1=="España" && pregunta2=="Italia"){
+			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Italia: \n1)Origen-Destino: Pamplona - Roma \n2) Origen-Destino: Madrid - Venezia \n3) Origen-Destino: Vitoria - Pizza  ");
 		}
-		else if(pregunta1=="España" && pregunta2=="Francia"){
+		if(pregunta1=="España" && pregunta2=="Francia"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Francia");
 		}
-		else if(pregunta1=="España" && pregunta2=="Marruecos"){
+		if(pregunta1=="España" && pregunta2=="Marruecos"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Marruecos");
 		}
-		else if(pregunta1=="España" && pregunta2=="Egipto"){
-			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Egipto");
-		}
-		else if(pregunta1=="España" && pregunta2=="España"){
+		if(pregunta1=="España" && pregunta2=="Egipto"){
 			JOptionPane.showMessageDialog(null,"Estos son los viajes disponibles de España a Egipto");
 		}
 
 	}
 
 	public static void metodoReservar(){
-		
 	}
 
 	public static void metodoInformacion(){
@@ -42,11 +42,12 @@ public class ClaseModelo{
 		Object msj = "   ";
 
 		JOptionPane.showMessageDialog(null, msj, //Mensaje 
-				"Informacion", //Titulo
+				"Informacion", //Título
 				JOptionPane.INFORMATION_MESSAGE);
 	}
-
-	public static void metodoCompanias(){
-
+	
+	public static void metodoCompañias(){
+		
 	}
+
 }
