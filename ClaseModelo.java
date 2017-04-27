@@ -34,16 +34,13 @@ public class ClaseModelo{
 	}
 
 	public static void metodoReservar(){
+		JOptionPane.showMessageDialog(null,"A continuacion se mostraran algunas ofertas las cuales podras reservar: ");
 	}
 
 	public static void metodoInformacion(){
-
 		String nl = System.getProperty("line.separator");
-		Object msj = "   ";
-
-		JOptionPane.showMessageDialog(null, msj, //Mensaje 
-				"Informacion", //Título
-				JOptionPane.INFORMATION_MESSAGE);
+		Object msj = "Aplicacion que permite Buscar y Reservar vuelos.\nCopyRight 2017 || 'Grupo2'";
+			     JOptionPane.showMessageDialog(null, msj, "Informacion",JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	public static void metodoCompañias(){
