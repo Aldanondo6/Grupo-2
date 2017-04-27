@@ -15,7 +15,7 @@ public class ClaseVista extends javax.swing.JFrame {
 	public ClaseVista(){
 
 		// Pide al usuario que escriba su nombre
-		String nombre = JOptionPane.showInputDialog( "Cual es su nombre?" );
+		String nombre = JOptionPane.showInputDialog("¿Cual es su nombre?");
 
 		// Crea el mensaje
 		String mensaje = String.format( "Bienvenid@ %s, a nuesta agencia de viajes!", nombre );
