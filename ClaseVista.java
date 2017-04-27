@@ -29,11 +29,15 @@ public class ClaseVista extends javax.swing.JFrame {
 		JOptionPane.showMessageDialog( null, mensaje, mensaje1, JOptionPane.INFORMATION_MESSAGE );
 
 		int codigo=JOptionPane.showConfirmDialog(null, "¿Quieres información sobre algun vuelo?", "Agencia De Viajes", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
-		if (codigo==JOptionPane.YES_OPTION){
+		try{
+			if (codigo==JOptionPane.YES_OPTION){
 
-		}else if(codigo==JOptionPane.NO_OPTION){
-			JOptionPane.showMessageDialog( null, mensaje2, mensaje1, JOptionPane.INFORMATION_MESSAGE );
-			return;
+			}else if(codigo==JOptionPane.NO_OPTION){
+				JOptionPane.showMessageDialog( null, mensaje2, mensaje1, JOptionPane.INFORMATION_MESSAGE );
+				return;
+			}
+		}catch(Exception e){
+			System.out.println("Se ha producido un error!");
 		}
 		Container contenedor = getContentPane();
 		setTitle("Viajes Tonton");
@@ -44,37 +48,37 @@ public class ClaseVista extends javax.swing.JFrame {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		contenedor.setLayout(null);
 
-		btnBuscar = new JButton("Buscar");
-		btnBuscar.setFont(new Font("Tahoma", Font.BOLD, 16));
+				btnBuscar = new JButton("Buscar");
+		btnBuscar.setFont(new Font("Arial", Font.BOLD, 16));
 		btnBuscar.setBounds(36, 129, 200, 41);
 		contenedor.add(btnBuscar);
 
 		btnReservar = new JButton("Reservar");
-		btnReservar.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnReservar.setFont(new Font("Arial", Font.BOLD, 15));
 		btnReservar.setBounds(290, 128, 181, 42);
 		contenedor.add(btnReservar);
 		//nuevo
 		btnInformacion = new JButton("Informacion");
-		btnInformacion.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnInformacion.setFont(new Font("Arial", Font.BOLD, 15));
 		btnInformacion.setBounds(290, 200, 181, 42);
 		contenedor.add(btnInformacion);
 
 		btnCompañias = new JButton("Compañias");
-		btnCompañias.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnCompañias.setFont(new Font("Arial", Font.BOLD, 15));
 		btnCompañias.setBounds(36, 201, 200, 41);
 		contenedor.add(btnCompañias);
 
-		lblEligeUnoDe = new JLabel("<html>Viaja con la compania Viajes tonton <br> y vive tu experiencia a tope</html>");
-		lblEligeUnoDe.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblEligeUnoDe = new JLabel("<html>Viaja con la compania <strong>Viajes Tonton</strong><br/> y vive tu experiencia a tope</html>");
+		lblEligeUnoDe.setFont(new Font("Arial", Font.ITALIC, 18));
 		lblEligeUnoDe.setBounds(27, 11, 386, 75);
 		contenedor.add(lblEligeUnoDe);
 		setVisible(true);
-		
+
 		setLocationRelativeTo(null);
 		setResizable(false);
-		setTitle("ejemplo");
-		setIconImage(new ImageIcon(getClass().getResource("/Imagenes/letraT.jpg")).getImage());
-		((JPanel)getContentPane()).setOpaque(false); ImageIcon uno=new ImageIcon(this.getClass().getResource("/Imagenes/prueba.png")); JLabel fondo= new JLabel(); fondo.setIcon(uno); getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER); fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
+		setTitle("Imagen");
+		setIconImage(new ImageIcon(getClass().getResource("/imagenes/letraT.jpeg")).getImage());
+		((JPanel)getContentPane()).setOpaque(false); ImageIcon uno=new ImageIcon(this.getClass().getResource("/imagenes/prueba.jpeg")); JLabel fondo= new JLabel(); fondo.setIcon(uno); getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER); fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
 
 	}
 }
