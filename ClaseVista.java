@@ -30,11 +30,14 @@ public class ClaseVista extends javax.swing.JFrame {
 		JOptionPane.showMessageDialog( null, mensaje, mensaje1, JOptionPane.INFORMATION_MESSAGE );
 
 		int codigo=JOptionPane.showConfirmDialog(null, "¿Quieres información sobre algun vuelo?", "Agencia De Viajes", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+		try{
 		if (codigo==JOptionPane.YES_OPTION){
-
 		}else if(codigo==JOptionPane.NO_OPTION){
 			JOptionPane.showMessageDialog( null, mensaje2, mensaje1, JOptionPane.INFORMATION_MESSAGE );
 			return;
+		}
+		}catch(Exception e){
+			System.out.println(e.getMessage());
 		}
 		Container contenedor = getContentPane();
 		setTitle("Viajes Tonton");
@@ -66,8 +69,8 @@ public class ClaseVista extends javax.swing.JFrame {
 		btnCompañias.setBounds(36, 201, 200, 41);
 		contenedor.add(btnCompañias);
 
-		lblEligeUnoDe = new JLabel("<html>Viaja con la compania Viajes tonton <br> y vive tu experiencia a tope</html>");
-		lblEligeUnoDe.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblEligeUnoDe = new JLabel("<html>Viaja con la compania <strong>Viajes Tonton</strong><br/> y vive tu experiencia a tope</html>");
+		lblEligeUnoDe.setFont(new Font("Arial", Font.ITALIC, 18));
 		lblEligeUnoDe.setBounds(27, 11, 386, 75);
 		contenedor.add(lblEligeUnoDe);
 		setVisible(true);
