@@ -77,9 +77,13 @@ public class ClaseVista extends javax.swing.JFrame {
 
 		setLocationRelativeTo(null);
 		setResizable(false);
-		setTitle("Imagen");
-		setIconImage(new ImageIcon(getClass().getResource("/imagenes/letraT.jpeg")).getImage());
-		((JPanel)getContentPane()).setOpaque(false); ImageIcon uno=new ImageIcon(this.getClass().getResource("/imagenes/prueba.jpeg")); JLabel fondo= new JLabel(); fondo.setIcon(uno); getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER); fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
-
+		setTitle("Viajes TonTon");
+		setIconImage(new ImageIcon(getClass().getResource("/Imagenes/letraT.jpg")).getImage());
+		
+		((JPanel)getContentPane()).setOpaque(false); 
+		ImageIcon uno=new ImageIcon(this.getClass().getResource("/Imagenes/prueba.png")); 
+		JLabel fondo= new JLabel(); 
+		fondo.setIcon(uno); getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER); 
+		fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
 	}
 }
