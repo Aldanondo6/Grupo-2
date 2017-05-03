@@ -48,8 +48,9 @@ public class ClaseVista extends javax.swing.JFrame {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		contenedor.setLayout(null);
 
-				btnBuscar = new JButton("Buscar");
+		btnBuscar = new JButton("Buscar");
 		btnBuscar.setFont(new Font("Arial", Font.BOLD, 16));
+		btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/letraB3.png")));
 		btnBuscar.setBounds(36, 129, 200, 41);
 		contenedor.add(btnBuscar);
 
