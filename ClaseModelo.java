@@ -65,17 +65,22 @@ public class ClaseModelo{
 	}
 	
 	public static void metodoCompañias(){
-				boolean verfal;
+	public static void metodoCompañias(){
+		boolean verfal;
 		String elegir = null;
 		Desktop enlace = null;
 
 		do{
 			verfal=false;
 			try{
-				elegir=JOptionPane.showInputDialog("Páginas Oficiales Aerolineas:\n"
+				elegir=JOptionPane.showInputDialog(null,"<html><strong>Páginas Oficiales Aerolineas:</strong></html>\n"
 						+"1._ Iberia\n"
-						+"2._ KLM\n");
+						+"2._ KLM\n", null, JOptionPane.DEFAULT_OPTION);
 				Integer.parseInt(elegir);
+				if(Integer.parseInt(elegir) == 0){
+					JOptionPane.showMessageDialog(null, "El numero no existe en la lista!", null, JOptionPane.INFORMATION_MESSAGE );
+					verfal=true;
+				}
 			}
 			catch(Exception e){
 				System.out.println("No puedes escribir letras!");
@@ -101,7 +106,6 @@ public class ClaseModelo{
 			break;
 		}
 
-	}
 	}
 
 }
