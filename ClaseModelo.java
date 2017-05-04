@@ -33,8 +33,29 @@ public class ClaseModelo{
 
 	}
 
+	
 	public static void metodoReservar(){
-		JOptionPane.showMessageDialog(null,"A continuacion se mostraran algunas ofertas las cuales podras reservar: ");
+		
+		int opcion;
+		
+		do{
+			opcion=Integer.parseInt(JOptionPane.showInputDialog(null, 
+						"	ELIJA EL PROGRAMA QUE DESEE UTILIZAR \n"+
+			"1.- OPCION UNO\n"+
+			"2.- OPCION DOS\n"+
+			"3.- OPCION TRES\n"+
+			"4.- OPCION SALIR\n"+
+			"INGRESE UNA OPCION [1-4]", "MENU", JOptionPane.QUESTION_MESSAGE));
+
+			switch(opcion){
+			case 1: System.out.println("f"); //opcion1(); break;
+			case 2: System.out.println("a");//opcion2(); break;
+			case 3: System.out.println("s");//opcion3(); break;
+			case 4: JOptionPane.showMessageDialog(null, "QUE TENGA UN BUEN DÍA. "); break;
+			default: JOptionPane.showMessageDialog(null, "ELIJA UNA OPCION VALIDA\n", "ERROR OPCION", JOptionPane.WARNING_MESSAGE);
+			} }while(opcion!=4);
+
+	
 	}
 
 	public static void metodoInformacion(){
