@@ -48,19 +48,21 @@ public class ClaseVista extends javax.swing.JFrame {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		contenedor.setLayout(null);
 
-		btnBuscar = new JButton("Buscar");
-		btnBuscar.setFont(new Font("Arial", Font.BOLD, 16));
-		btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/letraB3.png")));
+		btnBuscar = new JButton("Buscar ");
+		btnBuscar.setFont(new Font("Arial", Font.BOLD, 15));
+		btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/b.png")));
 		btnBuscar.setBounds(36, 129, 200, 41);
 		contenedor.add(btnBuscar);
 
 		btnReservar = new JButton("Reservar");
 		btnReservar.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnReservar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/r.png")));
 		btnReservar.setBounds(290, 128, 181, 42);
 		contenedor.add(btnReservar);
 		//nuevo
 		btnInformacion = new JButton("Informacion");
 		btnInformacion.setFont(new Font("Tahoma", Font.BOLD, 15));
+		btnInformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/i.png")));
 		btnInformacion.setBounds(290, 200, 181, 42);
 		contenedor.add(btnInformacion);
 
