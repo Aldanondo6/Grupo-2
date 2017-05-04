@@ -65,7 +65,43 @@ public class ClaseModelo{
 	}
 	
 	public static void metodoCompañias(){
-		
+				boolean verfal;
+		String elegir = null;
+		Desktop enlace = null;
+
+		do{
+			verfal=false;
+			try{
+				elegir=JOptionPane.showInputDialog("Páginas Oficiales Aerolineas:\n"
+						+"1._ Iberia\n"
+						+"2._ KLM\n");
+				Integer.parseInt(elegir);
+			}
+			catch(Exception e){
+				System.out.println("No puedes escribir letras!");
+			}
+		}while(verfal);
+
+		switch(Integer.parseInt(elegir)){
+		case 1:
+			enlace=Desktop.getDesktop();
+			try {
+				enlace.browse(new URI("https://www.iberia.com/"));
+			} catch (IOException | URISyntaxException e) {
+				e.getMessage();
+			}
+			break;
+		case 2:
+			enlace=Desktop.getDesktop();
+			try {
+				enlace.browse(new URI("https://www.klm.com/home/es/es"));
+			} catch (IOException | URISyntaxException e) {
+				e.getMessage();
+			}
+			break;
+		}
+
+	}
 	}
 
 }
