@@ -65,7 +65,6 @@ public class ClaseModelo{
 	}
 	
 	public static void metodoCompañias(){
-	public static void metodoCompañias(){
 		boolean verfal;
 		String elegir = null;
 		Desktop enlace = null;
