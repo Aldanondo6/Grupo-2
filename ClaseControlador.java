@@ -10,7 +10,7 @@ public class claseControlador implements ActionListener { // es una interfaz y
 	claseModelo objModelo = null;
 	claseVista objVista = null;
 
-	public claseControlador(claseVista objVista, claseModelo objModelo) { // constructor
+	public ClaseControlador(claseVista objVista, claseModelo objModelo) { // constructor
 
 		this.objVista = objVista;
 		this.objModelo = objModelo;
