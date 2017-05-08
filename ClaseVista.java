@@ -4,7 +4,7 @@ import javax.swing.plaf.FontUIResource;
 import java.awt.Font;
 import java.awt.Container;
 
-public class claseVista extends javax.swing.JFrame {
+public class ClaseVista extends javax.swing.JFrame {
 	private static final long serialVersionUID = 7583742851780292406L;
 	JButton btnBuscar = null;
 	JButton btnInformacion = null;
@@ -12,7 +12,7 @@ public class claseVista extends javax.swing.JFrame {
 	JButton btnCompañias = null;
 	JLabel lblEligeUnoDe = null;
 
-	public claseVista() {
+	public ClaseVista() {
 
 		// Pide al usuario que escriba su nombre
 		UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Cambria", Font.ITALIC, 18)));
