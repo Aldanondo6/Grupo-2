@@ -1,11 +1,11 @@
 public class clasePrincipal {
 
 	public static void main(String args[]) {
-		claseModelo modelo = new claseModelo();
-		claseVista vista = new claseVista();
-		try {			
+		try {
+			claseModelo modelo = new claseModelo();
+			claseVista vista = new claseVista();
 			new claseControlador(vista, modelo);
-		} catch (NullPointerException e){
+		} catch (NullPointerException e) {
 		}
 
 	}
